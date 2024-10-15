@@ -49,6 +49,7 @@
 |IM_TC1 |  (-1,-2,-3) | S1,S2,S3 <= 0    |   Impossível       |                 |
 
 > **Tabela TestCases BVA:**
+
 |#TC   | Inputs   | Condição | Resultado Esperado | Resultado Obtido|
 |------|----------|----------|--------------------|-----------------|
 |#TC1|  (maxINT,maxINT,maxINT) |S1,S2,S3 >= 0 |   Equilatero       |                 |

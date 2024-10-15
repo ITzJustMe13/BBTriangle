@@ -14,3 +14,6 @@
 | Classificação Triangulo Escaleno   | Nº Inputs   |   3    |    !=3   |
 |                                    | Tipo Inputs |   int    |  !=int     |
 |                                    | Restrições  |  S1!=S2!=S3     |       |
+| Classificação Triangulo Impossível | Nº Inputs   |   3    |    !=3   |
+|                                    | Tipo Inputs |   int    |  !=int     |
+|                                    | Restrições  |  S1,S2,S3 <= 0     |       |

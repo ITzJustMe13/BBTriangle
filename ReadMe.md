@@ -16,7 +16,7 @@
 |                                    | Restrições  |  S1!=S2!=S3  and S1,S2,S3 >= 0|       |
 | Classificação Triangulo Impossível | Nº Inputs   |   3    |    !=3   |
 |                                    | Tipo Inputs |   int    |  !=int     |
-|                                    | Restrições  |  S1!=S2!=S3  and S1,S2,S3 >= 0|       |
+|                                    | Restrições  |  S1,S2,S3 <= 0|       |
 
 > **Tabela BVA:**
 
@@ -38,7 +38,7 @@
 #TC10 (,,)
 
 
-> **Tabela TestCases:**
+> **Tabela TestCases ECP:**
 
 |#TC   | Inputs   | Condição | Resultado Esperado | Resultado Obtido|
 |------|----------|----------|--------------------|-----------------|
@@ -46,7 +46,21 @@
 |IS_TC1 |  (2,2,3) |S1,S2,S3 >= 0 |   Isósceles       |                 |
 |RE_TC1 |  (5,3,4) | S1,S2,S3 >= 0  |   Retângulo       |                 |
 |ES_TC1 |  (2,3,4) |  S1,S2,S3 >= 0 |   Escaleno       |                 |
-|IM_TC1 |  (0,0,0) | S1,S2,S3 <= 0    |   Impossível       |                 |
+|IM_TC1 |  (-1,-2,-3) | S1,S2,S3 <= 0    |   Impossível       |                 |
+
+> **Tabela TestCases BVA:**
+|#TC   | Inputs   | Condição | Resultado Esperado | Resultado Obtido|
+|------|----------|----------|--------------------|-----------------|
+|#TC1|  (maxINT,maxINT,maxINT) |S1,S2,S3 >= 0 |   Equilatero       |                 |
+|#TC2 |  (0,0,0) |S1,S2,S3 <= 0  |   Impossível       |                 |
+|#TC3 |  (maxINT,0,maxINT) | S1,S3 >= 0 and S2 <= 0  |   Impossível       |                 |
+|#TC4 |  (0,maxINT,maxINT) |  S1 <= 0 and S2,S3 >= 0 |   Impossível       |                 |
+|#TC5 |  (maxINT,maxINT,0) | S1,S2 >= 0 and S3 <= 0    |   Impossível       |                 |
+|#TC6|  (maxINT,0,0) |S1 >= 0 and S2,S3 <= 0 |   Impossível       |                 |
+|#TC7 |  (0,0,maxINT) |S1,S2 <= 0 and S3 >= 0 |   Impossível       |                 |
+|#TC8 |  (0,maxINT,0) | S2 >= 0 and S1,S3 <= 0  |   Impossível       |                 |
+|#TC9 |  (null,null,null) |  S1,S2,S3 != int |   Impossível       |                 |
+|#TC10 |  (,,) |     |   Impossível       |                 |
 
 
 
